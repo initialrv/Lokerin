@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JobApply Tracker — User Guide</title>
+  <style>
+    :root {
+      --text: #111827;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+      --accent: #0369a1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.55;
+      color: var(--text);
+      background: var(--bg);
+      margin: 0;
+      padding: 2rem 1.25rem 3rem;
+      max-width: 44rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 0.5rem; }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 2rem; }
+    h2 {
+      font-size: 1.2rem;
+      margin: 2rem 0 0.75rem;
+      padding-top: 0.25rem;
+      border-top: 1px solid var(--border);
+    }
+    h2:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
+    h3 { font-size: 1.05rem; margin: 1.25rem 0 0.5rem; }
+    p { margin: 0.5rem 0; }
+    ul { margin: 0.5rem 0 0.75rem 1.2rem; padding: 0; }
+    li { margin: 0.35rem 0; }
+    strong { font-weight: 600; }
+    .callout {
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin: 0.75rem 0;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.6rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f9fafb; }
+    .print-hint {
+      display: none;
+    }
+    @media print {
+      body { padding: 0.5in; max-width: none; }
+      .print-hint { display: none !important; }
+      a { color: inherit; text-decoration: none; }
+      h2 { page-break-after: avoid; }
+    }
+    @media screen {
+      .print-hint {
+        display: block;
+        background: #fef3c7;
+        border: 1px solid #fcd34d;
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p class="print-hint">
+    <strong>Save as PDF (Windows):</strong> Press <strong>Ctrl+P</strong> → choose <strong>Microsoft Print to PDF</strong> or <strong>Save as PDF</strong> → Save.
+  </p>
+
+  <h1>JobApply Tracker — User Guide</h1>
+  <p class="meta">Version 1.0 · Plain-language help for daily use</p>
+
+  <p>
+    This app helps you keep a <strong>private list</strong> of jobs you applied for.
+    Your information is saved <strong>on your phone or tablet</strong>, not on a website you log into.
+  </p>
+
+  <h2>What this app is for</h2>
+  <ul>
+    <li>Remember <strong>which company</strong> you applied to and <strong>what role</strong> it was.</li>
+    <li>Track <strong>where you are</strong> in the process (for example: Applied, Interview, Offer).</li>
+    <li>Add <strong>notes</strong>, <strong>links</strong>, <strong>follow-up dates</strong>, and <strong>interview</strong> entries.</li>
+    <li><strong>Export</strong> a backup file when you want (you choose where it goes).</li>
+  </ul>
+
+  <h2>First time you open the app</h2>
+  <ol>
+    <li>Wait a moment while the app <strong>prepares its storage</strong> on the device. This is normal.</li>
+    <li>If something goes wrong, you may see a <strong>Try again</strong> button — tap it once or twice.</li>
+    <li>You will see <strong>three tabs</strong> at the bottom: <strong>Overview</strong>, <strong>Applications</strong>, and <strong>Settings</strong>.</li>
+  </ol>
+
+  <h2>The three main tabs</h2>
+
+  <h3>Overview</h3>
+  <ul>
+    <li>Shows <strong>counts</strong> for each stage (Draft, Applied, Screening, and so on).</li>
+    <li>Shows a short list of <strong>recently updated</strong> applications.</li>
+    <li>Use this tab when you want a <strong>quick snapshot</strong> of your job search.</li>
+  </ul>
+
+  <h3>Applications</h3>
+  <p>This is where you spend most of your time.</p>
+  <ul>
+    <li><strong>Search box</strong> — Type part of a company name, job title, notes, or location. The list updates to match.</li>
+    <li><strong>Chips</strong> (Draft, Applied, All, etc.) — Tap a chip to <strong>filter</strong> the list. Tap <strong>All</strong> to see everything.</li>
+    <li><strong>List</strong> — Each row is one application. Tap a row to open <strong>details</strong>.</li>
+    <li><strong>Plus (+) button</strong> — Tap to <strong>add a new application</strong>.</li>
+  </ul>
+
+  <h3>Settings</h3>
+  <ul>
+    <li><strong>Connectivity</strong> — Information only. The app works <strong>without internet</strong> for normal use.</li>
+    <li><strong>Export JSON</strong> — Creates a backup file. See “Exporting a backup” below.</li>
+    <li><strong>Privacy</strong> — Reminder that data is stored on the device.</li>
+  </ul>
+
+  <h2>Adding a new application</h2>
+  <ol>
+    <li>Go to the <strong>Applications</strong> tab.</li>
+    <li>Tap the <strong>+</strong> button.</li>
+    <li>Fill in the form:
+      <ul>
+        <li><strong>Company</strong> — Required.</li>
+        <li><strong>Role / title</strong> — Required (for example: “Customer Support Specialist”).</li>
+        <li><strong>Status</strong> — Tap the row to pick a stage (for example <strong>Applied</strong>).</li>
+        <li><strong>Optional fields</strong> — You can leave these blank:
+          <ul>
+            <li><strong>Applied date</strong> — Example: <code>2026-05-15</code> (year-month-day).</li>
+            <li><strong>Location</strong> — City, remote, hybrid, etc.</li>
+            <li><strong>Job posting URL</strong> — Link to the job ad.</li>
+            <li><strong>Compensation notes</strong> — What they pay or what you expect.</li>
+            <li><strong>Next follow-up</strong> — When you want to check in again.</li>
+            <li><strong>Notes</strong> — Anything you want to remember.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Tap <strong>Save application</strong>.</li>
+    <li>You return to the list and should see your new entry.</li>
+  </ol>
+  <p class="callout"><strong>Tip:</strong> If Save does nothing, scroll up and check that <strong>Company</strong> and <strong>Role</strong> are filled in.</p>
+
+  <h2>Opening and editing an application</h2>
+  <ol>
+    <li>On <strong>Applications</strong>, tap the row you want.</li>
+    <li>Change anything you need on the <strong>detail</strong> screen.</li>
+    <li>Tap <strong>Save changes</strong>.</li>
+  </ol>
+
+  <h3>Deleting an application</h3>
+  <ol>
+    <li>Open the application’s <strong>detail</strong> screen.</li>
+    <li>Tap <strong>Delete</strong> (top area).</li>
+    <li>Confirm when asked. <strong>This cannot be undone</strong> on the device.</li>
+  </ol>
+
+  <h2>Interviews</h2>
+  <p>On the <strong>detail</strong> screen, scroll to <strong>Interviews</strong>.</p>
+  <ul>
+    <li>Tap <strong>Add</strong> to log a new interview (or call, or meeting).</li>
+    <li><strong>Title</strong> — Required (for example: “Phone screen with recruiter”).</li>
+    <li><strong>When</strong> — Optional (plain text date/time is fine).</li>
+    <li><strong>Notes</strong> — Optional.</li>
+    <li>Tap <strong>Save interview</strong>.</li>
+    <li>To remove one, tap the <strong>✕</strong> on that row and confirm.</li>
+  </ul>
+
+  <h2>Exporting a backup (JSON)</h2>
+  <p><strong>Why export?</strong> If you get a new phone, reset the device, or uninstall the app, you may lose data unless you backed it up.</p>
+  <ol>
+    <li>Go to <strong>Settings</strong>.</li>
+    <li>Tap <strong>Export JSON</strong>.</li>
+    <li>Your phone shows the normal <strong>Share</strong> screen.</li>
+    <li>Pick a destination you trust (email to yourself, Google Drive, Downloads, etc.).</li>
+  </ol>
+  <p class="callout">
+    <strong>Important:</strong> The backup file may contain <strong>private</strong> information. Only share it with places you trust.
+  </p>
+  <p>
+    <strong>Note:</strong> On some <strong>web browser</strong> versions of the app, export may not work the same way as on a phone.
+    If you rely on backups, use your <strong>Android</strong> device for exports.
+  </p>
+
+  <h2>Working without internet</h2>
+  <ul>
+    <li>You can <strong>view</strong>, <strong>add</strong>, <strong>edit</strong>, and <strong>delete</strong> applications <strong>without Wi‑Fi or mobile data</strong>.</li>
+    <li><strong>Export</strong> uses your phone’s share screen; you only need a connection if the app you pick <strong>requires</strong> internet.</li>
+  </ul>
+
+  <h2>Simple troubleshooting</h2>
+  <table>
+    <thead>
+      <tr><th>Problem</th><th>What to try</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>List is empty</td>
+        <td>Tap <strong>All</strong>, clear the <strong>search</strong> box, or tap <strong>+</strong> to add your first application.</td>
+      </tr>
+      <tr>
+        <td>I saved but don’t see it</td>
+        <td>Leave the tab and open <strong>Applications</strong> again.</td>
+      </tr>
+      <tr>
+        <td>Export doesn’t appear</td>
+        <td>Use <strong>Android</strong> (recommended). Try again after closing other apps.</td>
+      </tr>
+      <tr>
+        <td>Database error</td>
+        <td>Tap <strong>Try again</strong>. If it keeps failing, restart the phone.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Privacy in plain language</h2>
+  <ul>
+    <li>Your job applications are stored in a <strong>database file on the device</strong>.</li>
+    <li>The app does <strong>not</strong> send your list to a company server <strong>by default</strong> (unless someone adds that later).</li>
+    <li><strong>You</strong> control exports when you tap <strong>Export JSON</strong> and choose where to send the file.</li>
+  </ul>
+
+  <h2>Quick reference</h2>
+  <table>
+    <thead>
+      <tr><th>I want to…</th><th>Go to…</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>See totals</td><td><strong>Overview</strong> tab</td></tr>
+      <tr><td>Search or filter</td><td><strong>Applications</strong> tab</td></tr>
+      <tr><td>Add a job</td><td><strong>Applications</strong> → <strong>+</strong></td></tr>
+      <tr><td>Edit a job</td><td><strong>Applications</strong> → tap the row</td></tr>
+      <tr><td>Add an interview</td><td>Detail → <strong>Interviews</strong> → <strong>Add</strong></td></tr>
+      <tr><td>Back up my data</td><td><strong>Settings</strong> → <strong>Export JSON</strong></td></tr>
+    </tbody>
+  </table>
+
+  <p class="meta" style="margin-top:2rem;">End of guide</p>
+</body>
+</html>

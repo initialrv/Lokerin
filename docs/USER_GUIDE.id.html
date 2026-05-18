@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JobApply Tracker — Panduan Pengguna</title>
+  <style>
+    :root {
+      --text: #111827;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+      --accent: #0369a1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.55;
+      color: var(--text);
+      background: var(--bg);
+      margin: 0;
+      padding: 2rem 1.25rem 3rem;
+      max-width: 44rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 0.5rem; }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 2rem; }
+    h2 {
+      font-size: 1.2rem;
+      margin: 2rem 0 0.75rem;
+      padding-top: 0.25rem;
+      border-top: 1px solid var(--border);
+    }
+    h2:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
+    h3 { font-size: 1.05rem; margin: 1.25rem 0 0.5rem; }
+    p { margin: 0.5rem 0; }
+    ul { margin: 0.5rem 0 0.75rem 1.2rem; padding: 0; }
+    li { margin: 0.35rem 0; }
+    strong { font-weight: 600; }
+    .callout {
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin: 0.75rem 0;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.6rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f9fafb; }
+    .print-hint {
+      display: none;
+    }
+    @media print {
+      body { padding: 0.5in; max-width: none; }
+      .print-hint { display: none !important; }
+      a { color: inherit; text-decoration: none; }
+      h2 { page-break-after: avoid; }
+    }
+    @media screen {
+      .print-hint {
+        display: block;
+        background: #fef3c7;
+        border: 1px solid #fcd34d;
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p class="print-hint">
+    <strong>Simpan sebagai PDF (Windows):</strong> Tekan <strong>Ctrl+P</strong> → pilih <strong>Microsoft Print to PDF</strong> atau <strong>Save as PDF</strong> → Simpan.
+  </p>
+
+  <h1>JobApply Tracker — Panduan Pengguna</h1>
+  <p class="meta">Versi 1.0 · Penjelasan sederhana untuk pemakaian sehari-hari</p>
+
+  <p>
+    Aplikasi ini membantu Anda menyimpan <strong>daftar lamaran kerja</strong> secara pribadi.
+    Data Anda disimpan <strong>di ponsel atau tablet</strong>, bukan di situs web tempat Anda harus login.
+  </p>
+
+  <h2>Apa fungsi aplikasi ini</h2>
+  <ul>
+    <li>Mengingat <strong>perusahaan mana</strong> yang Anda lamar dan <strong>posisi apa</strong> (judul pekerjaan).</li>
+    <li>Melihat <strong>tahapan proses</strong> (misalnya: Applied = sudah melamar, Interview = wawancara, Offer = penawaran).</li>
+    <li>Menambah <strong>catatan</strong>, <strong>tautan</strong>, <strong>tanggal tindak lanjut</strong>, dan jadwal <strong>wawancara</strong>.</li>
+    <li><strong>Mengekspor</strong> file cadangan kapan saja (Anda yang memilih mau dikirim ke mana).</li>
+  </ul>
+
+  <h2>Pertama kali membuka aplikasi</h2>
+  <ol>
+    <li>Tunggu sebentar saat aplikasi <strong>menyiapkan penyimpanan</strong> di perangkat. Ini normal.</li>
+    <li>Jika ada masalah, bisa muncul tombol <strong>Try again</strong> (Coba lagi) — ketuk satu atau dua kali.</li>
+    <li>Anda akan melihat <strong>tiga tab</strong> di bagian bawah: <strong>Overview</strong>, <strong>Applications</strong>, dan <strong>Settings</strong>.</li>
+  </ol>
+
+  <h2>Tiga tab utama</h2>
+  <p class="meta" style="margin-top:-0.5rem;">Nama tab mengikuti tampilan aplikasi (bahasa Inggris).</p>
+
+  <h3>Overview (Ringkasan)</h3>
+  <ul>
+    <li>Menampilkan <strong>jumlah</strong> lamaran per tahapan (misalnya Draft, Applied, Screening, dan seterusnya).</li>
+    <li>Menampilkan daftar singkat lamaran yang <strong>baru diperbarui</strong>.</li>
+    <li>Gunakan tab ini untuk melihat <strong>gambaran cepat</strong> proses mencari kerja Anda.</li>
+  </ul>
+
+  <h3>Applications (Lamaran)</h3>
+  <p>Di sinilah Anda paling sering bekerja.</p>
+  <ul>
+    <li><strong>Kolom pencarian</strong> — Ketik sebagian nama perusahaan, judul pekerjaan, catatan, atau lokasi. Daftar akan disaring sesuai kata kunci.</li>
+    <li><strong>Chip</strong> (tombol kecil berbentuk kapsul: Draft, Applied, All, dll.) — Ketuk untuk <strong>menyaring</strong> daftar. Ketuk <strong>All</strong> untuk melihat semua.</li>
+    <li><strong>Daftar</strong> — Setiap baris adalah satu lamaran. Ketuk baris untuk membuka <strong>detail</strong>.</li>
+    <li><strong>Tombol +</strong> — Ketuk untuk <strong>menambah lamaran baru</strong>.</li>
+  </ul>
+
+  <h3>Settings (Pengaturan)</h3>
+  <ul>
+    <li><strong>Connectivity</strong> — Hanya informasi. Aplikasi tetap bisa dipakai <strong>tanpa internet</strong> untuk penggunaan biasa.</li>
+    <li><strong>Export JSON</strong> — Membuat file cadangan. Lihat bagian “Mengekspor cadangan” di bawah.</li>
+    <li><strong>Privacy</strong> — Pengingat bahwa data disimpan di perangkat.</li>
+  </ul>
+
+  <h2>Menambah lamaran baru</h2>
+  <ol>
+    <li>Buka tab <strong>Applications</strong>.</li>
+    <li>Ketuk tombol <strong>+</strong>.</li>
+    <li>Isi formulir:
+      <ul>
+        <li><strong>Company</strong> (Perusahaan) — <strong>Wajib diisi</strong>.</li>
+        <li><strong>Role / title</strong> (Posisi / judul) — <strong>Wajib diisi</strong> (contoh: “Customer Support Specialist”).</li>
+        <li><strong>Status</strong> — Ketuk baris status untuk memilih tahapan (misalnya <strong>Applied</strong> = sudah melamar).</li>
+        <li><strong>Bagian opsional</strong> — Boleh dikosongkan:
+          <ul>
+            <li><strong>Applied date</strong> (Tanggal melamar) — Contoh format: <code>2026-05-15</code> (tahun-bulan-tanggal).</li>
+            <li><strong>Location</strong> (Lokasi) — Kota, remote, hybrid, dan sejenisnya.</li>
+            <li><strong>Job posting URL</strong> — Tautan ke lowongan.</li>
+            <li><strong>Compensation notes</strong> — Catatan soal gaji atau ekspektasi Anda.</li>
+            <li><strong>Next follow-up</strong> — Kapan Anda ingin menindaklanjuti lagi.</li>
+            <li><strong>Notes</strong> — Catatan bebas apa pun yang ingin Anda ingat.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Ketuk <strong>Save application</strong> (Simpan lamaran).</li>
+    <li>Anda kembali ke daftar dan seharusnya melihat entri baru.</li>
+  </ol>
+  <p class="callout">
+    <strong>Tips:</strong> Jika tombol simpan seolah tidak bereaksi, gulir ke atas dan pastikan <strong>Company</strong> serta <strong>Role</strong> sudah terisi.
+  </p>
+
+  <h2>Membuka dan mengubah lamaran</h2>
+  <ol>
+    <li>Di tab <strong>Applications</strong>, ketuk baris yang Anda inginkan.</li>
+    <li>Ubah apa pun yang perlu di layar <strong>detail</strong>.</li>
+    <li>Ketuk <strong>Save changes</strong> (Simpan perubahan).</li>
+  </ol>
+
+  <h3>Menghapus lamaran</h3>
+  <ol>
+    <li>Buka layar <strong>detail</strong> lamaran tersebut.</li>
+    <li>Ketuk <strong>Delete</strong> (biasanya di bagian atas).</li>
+    <li>Konfirmasi saat diminta. <strong>Penghapusan tidak bisa dibatalkan</strong> di perangkat ini.</li>
+  </ol>
+
+  <h2>Wawancara (Interviews)</h2>
+  <p>Di layar <strong>detail</strong>, gulir ke bagian <strong>Interviews</strong>.</p>
+  <ul>
+    <li>Ketuk <strong>Add</strong> untuk mencatat wawancara baru (bisa juga panggilan atau pertemuan).</li>
+    <li><strong>Title</strong> (Judul) — <strong>Wajib</strong> (contoh: “Phone screen dengan perekrut”).</li>
+    <li><strong>When</strong> (Kapan) — Opsional (teks tanggal/waktu biasa juga boleh).</li>
+    <li><strong>Notes</strong> — Opsional.</li>
+    <li>Ketuk <strong>Save interview</strong>.</li>
+    <li>Untuk menghapus satu jadwal, ketuk <strong>✕</strong> pada baris tersebut lalu konfirmasi.</li>
+  </ul>
+
+  <h2>Mengekspor cadangan (JSON)</h2>
+  <p><strong>Mengapa perlu ekspor?</strong> Jika Anda ganti ponsel, reset pabrik, atau menghapus instalasi aplikasi, data bisa hilang jika tidak dicadangkan.</p>
+  <ol>
+    <li>Buka tab <strong>Settings</strong>.</li>
+    <li>Ketuk <strong>Export JSON</strong>.</li>
+    <li>Ponsel akan menampilkan layar <strong>Share</strong> (bagikan) seperti biasa.</li>
+    <li>Pilih tujuan yang Anda percaya (email ke diri sendiri, Google Drive, folder Download, dll.).</li>
+  </ol>
+  <p class="callout">
+    <strong>Penting:</strong> File cadangan bisa berisi informasi <strong>pribadi</strong>. Bagikan hanya ke tempat yang Anda percaya.
+  </p>
+  <p>
+    <strong>Catatan:</strong> Pada beberapa versi aplikasi lewat <strong>peramban web</strong>, fitur ekspor bisa berbeda dengan di ponsel.
+    Jika Anda mengandalkan cadangan, gunakan perangkat <strong>Android</strong> untuk mengekspor.
+  </p>
+
+  <h2>Bekerja tanpa internet</h2>
+  <ul>
+    <li>Anda bisa <strong>melihat</strong>, <strong>menambah</strong>, <strong>mengubah</strong>, dan <strong>menghapus</strong> lamaran <strong>tanpa Wi‑Fi atau kuota data</strong>.</li>
+    <li><strong>Ekspor</strong> memakai layar bagikan bawaan ponsel; internet hanya diperlukan jika aplikasi tujuan Anda <strong>membutuhkan</strong> sambungan (misalnya unggah ke awan).</li>
+  </ul>
+
+  <h2>Penyelesaian masalah sederhana</h2>
+  <table>
+    <thead>
+      <tr><th>Masalah</th><th>Coba ini</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Daftar kosong</td>
+        <td>Ketuk <strong>All</strong>, kosongkan kolom <strong>search</strong>, atau ketuk <strong>+</strong> untuk menambah lamaran pertama.</td>
+      </tr>
+      <tr>
+        <td>Sudah simpan tapi tidak muncul</td>
+        <td>Keluar dari tab lalu buka lagi <strong>Applications</strong>.</td>
+      </tr>
+      <tr>
+        <td>Ekspor tidak muncul</td>
+        <td>Gunakan <strong>Android</strong> (disarankan). Tutup aplikasi lain lalu coba lagi.</td>
+      </tr>
+      <tr>
+        <td>Pesan error database</td>
+        <td>Ketuk <strong>Try again</strong>. Jika tetap gagal, mulai ulang (restart) ponsel.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Privasi dengan bahasa mudah</h2>
+  <ul>
+    <li>Lamaran kerja Anda disimpan dalam <strong>file basis data di perangkat</strong>.</li>
+    <li>Aplikasi ini <strong>tidak</strong> mengirim daftar Anda ke server perusahaan secara bawaan <strong>kecuali</strong> nanti ada fitur tambahan yang disengaja (misalnya sinkron awan).</li>
+    <li><strong>Anda</strong> yang mengontrol ekspor ketika mengetuk <strong>Export JSON</strong> dan memilih tujuan file.</li>
+  </ul>
+
+  <h2>Ringkasan cepat</h2>
+  <table>
+    <thead>
+      <tr><th>Saya ingin…</th><th>Buka…</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Melihat total per tahapan</td><td>Tab <strong>Overview</strong></td></tr>
+      <tr><td>Mencari atau menyaring</td><td>Tab <strong>Applications</strong></td></tr>
+      <tr><td>Menambah lamaran</td><td><strong>Applications</strong> → <strong>+</strong></td></tr>
+      <tr><td>Mengubah lamaran</td><td><strong>Applications</strong> → ketuk barisnya</td></tr>
+      <tr><td>Menambah wawancara</td><td>Detail → <strong>Interviews</strong> → <strong>Add</strong></td></tr>
+      <tr><td>Mencadangkan data</td><td><strong>Settings</strong> → <strong>Export JSON</strong></td></tr>
+    </tbody>
+  </table>
+
+  <p class="meta" style="margin-top:2rem;">Akhir panduan</p>
+</body>
+</html>

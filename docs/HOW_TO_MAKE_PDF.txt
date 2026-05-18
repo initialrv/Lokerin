@@ -1,0 +1,29 @@
+How to make a PDF from the user guide (Windows, beginner-friendly)
+====================================================================
+
+You already have two versions in the "docs" folder:
+
+  1) USER_GUIDE.md   — for developers / editing
+  2) USER_GUIDE.html — best for making a PDF on your PC
+
+Steps (HTML → PDF)
+------------------
+
+1. Open File Explorer and go to:
+
+   jobapply-tracker\docs\
+
+2. Double-click **USER_GUIDE.html**  
+   (It should open in Microsoft Edge or Chrome.)
+
+3. Press **Ctrl+P** on your keyboard (this means "Print").
+
+4. Under "Printer" or "Destination", choose one of these:
+   - **Microsoft Print to PDF**   (common on Windows), OR
+   - **Save as PDF**              (if you use Chrome)
+
+5. Click **Print** or **Save**.
+
+6. Pick a file name (for example: **JobApply-Tracker-User-Guide.pdf**) and save it wherever you like.
+
+That PDF is yours to send to testers, put on your website, or attach to your Play Store listing notes.

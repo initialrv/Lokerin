@@ -1,0 +1,632 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 2960 >>
+stream
+BT
+/F1 11 Tf
+/F1 22 Tf
+1 0 0 1 46 742 Tm
+(Lokerin Vibecoding Workflow) Tj
+/F1 11 Tf
+1 0 0 1 46 710 Tm
+(Prepared for Ravenduck) Tj
+/F1 11 Tf
+1 0 0 1 46 695 Tm
+(Date: 2026-05-18) Tj
+/F1 11 Tf
+1 0 0 1 46 672 Tm
+(This document explains how Lokerin evolved through a practical AI-assisted workflow: rough) Tj
+/F1 11 Tf
+1 0 0 1 46 657 Tm
+(idea, debugging, UI iteration, native builds, QA, product decisions, and future roadmap.) Tj
+/F1 11 Tf
+1 0 0 1 46 642 Tm
+(It is written as something you can show a friend to explain what vibecoding looked like in) Tj
+/F1 11 Tf
+1 0 0 1 46 627 Tm
+(this project.) Tj
+/F1 15 Tf
+1 0 0 1 46 596 Tm
+(What Vibecoding Meant Here) Tj
+/F1 11 Tf
+1 0 0 1 46 571 Tm
+(The process was not just typing one prompt and getting an app. It was closer to) Tj
+/F1 11 Tf
+1 0 0 1 46 556 Tm
+(pair-building with an AI coding partner: you gave taste, product direction, real phone) Tj
+/F1 11 Tf
+1 0 0 1 46 541 Tm
+(feedback, screenshots, errors, and priorities; the assistant inspected the codebase, made) Tj
+/F1 11 Tf
+1 0 0 1 46 526 Tm
+(scoped changes, verified builds, and explained tradeoffs.) Tj
+/F1 11 Tf
+1 0 0 1 46 511 Tm
+(The strongest part of the workflow was fast iteration. You could say something like 'this) Tj
+/F1 11 Tf
+1 0 0 1 46 496 Tm
+(gap feels too big' or 'this text wraps in Indonesian' and the implementation could) Tj
+/F1 11 Tf
+1 0 0 1 46 481 Tm
+(immediately move from feeling to code.) Tj
+/F1 15 Tf
+1 0 0 1 46 450 Tm
+(Starting Point) Tj
+/F1 11 Tf
+1 0 0 1 46 425 Tm
+(The project began as an Expo React Native job application tracker with build/runtime) Tj
+/F1 11 Tf
+1 0 0 1 46 410 Tm
+(problems.) Tj
+/F1 11 Tf
+1 0 0 1 58 395 Tm
+(- Expo SDK mismatch from 52 to 54.) Tj
+/F1 11 Tf
+1 0 0 1 58 380 Tm
+(- Missing dependencies.) Tj
+/F1 11 Tf
+1 0 0 1 58 365 Tm
+(- Invalid TypeScript syntax.) Tj
+/F1 11 Tf
+1 0 0 1 58 350 Tm
+(- Missing React hook imports.) Tj
+/F1 11 Tf
+1 0 0 1 58 335 Tm
+(- Metro bundling/runtime failures.) Tj
+/F1 11 Tf
+1 0 0 1 58 320 Tm
+(- Expo Router structure needed validation.) Tj
+/F1 11 Tf
+1 0 0 1 46 297 Tm
+(The first goal was stability: make the app compile, bundle, and run before product polish.) Tj
+/F1 15 Tf
+1 0 0 1 46 266 Tm
+(Phase 1: Stabilize The App) Tj
+/F1 11 Tf
+1 0 0 1 46 241 Tm
+(The assistant inspected package.json, route files, models, repositories, and current) Tj
+/F1 11 Tf
+1 0 0 1 46 226 Tm
+(errors.) Tj
+/F1 11 Tf
+1 0 0 1 46 211 Tm
+(Fixes focused on compatibility with Expo SDK 54 and removing Metro blockers.) Tj
+/F1 11 Tf
+1 0 0 1 58 196 Tm
+(- Aligned dependencies using Expo-compatible packages.) Tj
+/F1 11 Tf
+1 0 0 1 58 181 Tm
+(- Fixed invalid TypeScript structures.) Tj
+/F1 11 Tf
+1 0 0 1 58 166 Tm
+(- Added missing imports such as React hooks.) Tj
+/F1 11 Tf
+1 0 0 1 58 151 Tm
+(- Checked Expo Router layout and route naming.) Tj
+/F1 11 Tf
+1 0 0 1 58 136 Tm
+(- Repeated typecheck, lint, and Android export checks.) Tj
+/F1 11 Tf
+1 0 0 1 46 113 Tm
+(This phase made the project safe to iterate on.) Tj
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 12 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Length 3072 >>
+stream
+BT
+/F1 11 Tf
+/F1 15 Tf
+1 0 0 1 46 742 Tm
+(Phase 2: Define Product Identity) Tj
+/F1 11 Tf
+1 0 0 1 46 717 Tm
+(The app moved from a generic tracker into Lokerin: a calm, compact, bright, local-first) Tj
+/F1 11 Tf
+1 0 0 1 46 702 Tm
+(job search companion.) Tj
+/F1 11 Tf
+1 0 0 1 46 687 Tm
+(Brand direction chosen by the user:) Tj
+/F1 11 Tf
+1 0 0 1 58 672 Tm
+(- Not dark-only.) Tj
+/F1 11 Tf
+1 0 0 1 58 657 Tm
+(- Bright, positive lime/coral style.) Tj
+/F1 11 Tf
+1 0 0 1 58 642 Tm
+(- Minimalist but compact.) Tj
+/F1 11 Tf
+1 0 0 1 58 627 Tm
+(- Futuristic but still practical.) Tj
+/F1 11 Tf
+1 0 0 1 58 612 Tm
+(- English and Indonesian support.) Tj
+/F1 11 Tf
+1 0 0 1 58 597 Tm
+(- Friendly tone: 'A friend for your job search journey.') Tj
+/F1 11 Tf
+1 0 0 1 46 574 Tm
+(This was where product taste started guiding engineering decisions.) Tj
+/F1 15 Tf
+1 0 0 1 46 543 Tm
+(Phase 3: UI And Localization Iteration) Tj
+/F1 11 Tf
+1 0 0 1 46 518 Tm
+(The UI was tightened over many small passes based on live phone testing.) Tj
+/F1 11 Tf
+1 0 0 1 58 503 Tm
+(- Reduced top spacing across screens.) Tj
+/F1 11 Tf
+1 0 0 1 58 488 Tm
+(- Fixed search text wrapping in Indonesian.) Tj
+/F1 11 Tf
+1 0 0 1 58 473 Tm
+(- Aligned cards, chips, and containers.) Tj
+/F1 11 Tf
+1 0 0 1 58 458 Tm
+(- Made bottom tabs sit higher from the phone edge.) Tj
+/F1 11 Tf
+1 0 0 1 58 443 Tm
+(- Reworked application status chips into a compact two-row grid.) Tj
+/F1 11 Tf
+1 0 0 1 58 428 Tm
+(- Replaced stiff Indonesian copy with more natural phrasing.) Tj
+/F1 11 Tf
+1 0 0 1 58 413 Tm
+(- Fixed labels like Role/Title, Follow-up Date, Salary Range, Job Posting Link.) Tj
+/F1 11 Tf
+1 0 0 1 58 398 Tm
+(- Made recently updated items clickable.) Tj
+/F1 11 Tf
+1 0 0 1 58 383 Tm
+(- Themed save/archive dialogs instead of default system-looking popups.) Tj
+/F1 11 Tf
+1 0 0 1 46 360 Tm
+(This phase shows a key vibecoding pattern: the user describes what feels wrong, and the) Tj
+/F1 11 Tf
+1 0 0 1 46 345 Tm
+(assistant translates that into layout, copy, and component changes.) Tj
+/F1 15 Tf
+1 0 0 1 46 314 Tm
+(Phase 4: Data And Local-First Features) Tj
+/F1 11 Tf
+1 0 0 1 46 289 Tm
+(The app stayed fully local-first, avoiding operational cost.) Tj
+/F1 11 Tf
+1 0 0 1 46 274 Tm
+(Implemented features:) Tj
+/F1 11 Tf
+1 0 0 1 58 259 Tm
+(- SQLite-backed application tracking.) Tj
+/F1 11 Tf
+1 0 0 1 58 244 Tm
+(- Interview logs with editable date/time.) Tj
+/F1 11 Tf
+1 0 0 1 58 229 Tm
+(- Follow-up dates using native date/time picker.) Tj
+/F1 11 Tf
+1 0 0 1 58 214 Tm
+(- Archive and restore applications.) Tj
+/F1 11 Tf
+1 0 0 1 58 199 Tm
+(- JSON import/restore.) Tj
+/F1 11 Tf
+1 0 0 1 58 184 Tm
+(- CSV export.) Tj
+/F1 11 Tf
+1 0 0 1 58 169 Tm
+(- PDF export.) Tj
+/F1 11 Tf
+1 0 0 1 58 154 Tm
+(- Backup reminders.) Tj
+/F1 11 Tf
+1 0 0 1 58 139 Tm
+(- Follow-up notifications.) Tj
+/F1 11 Tf
+1 0 0 1 58 124 Tm
+(- Calendar handoff for follow-ups and interviews.) Tj
+/F1 11 Tf
+1 0 0 1 46 101 Tm
+(The app does not need a backend server for these features. Data remains on the device) Tj
+/F1 11 Tf
+1 0 0 1 46 86 Tm
+(unless the user exports or shares it.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 12 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 3365 >>
+stream
+BT
+/F1 11 Tf
+/F1 15 Tf
+1 0 0 1 46 742 Tm
+(Phase 5: Native Build Reality) Tj
+/F1 11 Tf
+1 0 0 1 46 717 Tm
+(A major lesson: not all Expo changes behave the same.) Tj
+/F1 11 Tf
+1 0 0 1 58 702 Tm
+(- JS-only changes can usually be tested by reloading Metro/dev-client.) Tj
+/F1 11 Tf
+1 0 0 1 58 687 Tm
+(- Native modules such as expo-notifications, react-native-pager-view, expo-dev-client,) Tj
+/F1 11 Tf
+1 0 0 1 58 672 Tm
+(and expo-calendar require a rebuilt APK.) Tj
+/F1 11 Tf
+1 0 0 1 58 657 Tm
+(- App icon, adaptive icon, and splash changes also require rebuilding and reinstalling.) Tj
+/F1 11 Tf
+1 0 0 1 46 634 Tm
+(Real example: expo-calendar caused 'Cannot find native module ExpoCalendar' until a new) Tj
+/F1 11 Tf
+1 0 0 1 46 619 Tm
+(development APK was built and installed. The real fix was not hiding the error; it was) Tj
+/F1 11 Tf
+1 0 0 1 46 604 Tm
+(running an EAS development build so the native module existed in the app binary.) Tj
+/F1 15 Tf
+1 0 0 1 46 573 Tm
+(Phase 6: Navigation And Motion) Tj
+/F1 11 Tf
+1 0 0 1 46 548 Tm
+(The app moved from tab-only navigation to swipeable page navigation.) Tj
+/F1 11 Tf
+1 0 0 1 58 533 Tm
+(- First version used gesture detection and had clunky snap/flash behavior.) Tj
+/F1 11 Tf
+1 0 0 1 58 518 Tm
+(- Then it moved to react-native-pager-view for actual adjacent-page swiping.) Tj
+/F1 11 Tf
+1 0 0 1 58 503 Tm
+(- The user tested on device and reported overlap, flashing, and no-page-change issues.) Tj
+/F1 11 Tf
+1 0 0 1 58 488 Tm
+(- The implementation was adjusted until swiping felt polished.) Tj
+/F1 11 Tf
+1 0 0 1 46 465 Tm
+(This phase is a good example of using device feedback. Some UI behavior cannot be judged) Tj
+/F1 11 Tf
+1 0 0 1 46 450 Tm
+(properly from code alone.) Tj
+/F1 15 Tf
+1 0 0 1 46 419 Tm
+(Phase 7: Product Polish) Tj
+/F1 11 Tf
+1 0 0 1 46 394 Tm
+(After the core app worked, the workflow shifted into final-product polish.) Tj
+/F1 11 Tf
+1 0 0 1 58 379 Tm
+(- Real Android package namespace: dev.ravenduck.lokerin.) Tj
+/F1 11 Tf
+1 0 0 1 58 364 Tm
+(- Placeholder asset pipeline for icon, adaptive icon, splash, and favicon.) Tj
+/F1 11 Tf
+1 0 0 1 58 349 Tm
+(- Store listing notes and screenshot checklist.) Tj
+/F1 11 Tf
+1 0 0 1 58 334 Tm
+(- Accessibility polish: screen reader labels, larger text safeguards, reduced motion) Tj
+/F1 11 Tf
+1 0 0 1 58 319 Tm
+(support.) Tj
+/F1 11 Tf
+1 0 0 1 58 304 Tm
+(- Better empty states.) Tj
+/F1 11 Tf
+1 0 0 1 58 289 Tm
+(- Better analytics on Overview.) Tj
+/F1 11 Tf
+1 0 0 1 58 274 Tm
+(- Manual sorting: newest, follow-up soon, company A-Z.) Tj
+/F1 11 Tf
+1 0 0 1 58 259 Tm
+(- Search matching company, role, notes, location, job link, salary, and status labels.) Tj
+/F1 11 Tf
+1 0 0 1 58 244 Tm
+(- Duplicate application action.) Tj
+/F1 11 Tf
+1 0 0 1 58 229 Tm
+(- Onboarding reset.) Tj
+/F1 11 Tf
+1 0 0 1 58 214 Tm
+(- Privacy policy link and About section.) Tj
+/F1 11 Tf
+1 0 0 1 58 199 Tm
+(- Application templates with friendly EN/ID tone.) Tj
+/F1 15 Tf
+1 0 0 1 46 168 Tm
+(Phase 8: QA Loop) Tj
+/F1 11 Tf
+1 0 0 1 46 143 Tm
+(The QA loop mixed automated checks with real phone testing.) Tj
+/F1 11 Tf
+1 0 0 1 46 128 Tm
+(Automated checks used repeatedly:) Tj
+/F1 11 Tf
+1 0 0 1 58 113 Tm
+(- npm run typecheck) Tj
+/F1 11 Tf
+1 0 0 1 58 98 Tm
+(- npm run lint) Tj
+/F1 11 Tf
+1 0 0 1 58 83 Tm
+(- npx expo export --platform android) Tj
+/F1 11 Tf
+1 0 0 1 58 68 Tm
+(- expo-doctor when useful) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 12 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 2269 >>
+stream
+BT
+/F1 11 Tf
+/F1 11 Tf
+1 0 0 1 46 742 Tm
+(Manual phone QA covered:) Tj
+/F1 11 Tf
+1 0 0 1 58 727 Tm
+(- Android dev build install.) Tj
+/F1 11 Tf
+1 0 0 1 58 712 Tm
+(- Light/dark mode.) Tj
+/F1 11 Tf
+1 0 0 1 58 697 Tm
+(- English/Indonesian language switching.) Tj
+/F1 11 Tf
+1 0 0 1 58 682 Tm
+(- Date/time picker.) Tj
+/F1 11 Tf
+1 0 0 1 58 667 Tm
+(- Notifications.) Tj
+/F1 11 Tf
+1 0 0 1 58 652 Tm
+(- Calendar handoff.) Tj
+/F1 11 Tf
+1 0 0 1 58 637 Tm
+(- JSON import/restore.) Tj
+/F1 11 Tf
+1 0 0 1 58 622 Tm
+(- CSV/PDF export.) Tj
+/F1 11 Tf
+1 0 0 1 58 607 Tm
+(- Swipe navigation.) Tj
+/F1 11 Tf
+1 0 0 1 58 592 Tm
+(- App icon/splash after rebuild.) Tj
+/F1 15 Tf
+1 0 0 1 46 561 Tm
+(Important Decisions) Tj
+/F1 11 Tf
+1 0 0 1 46 536 Tm
+(Several features were intentionally skipped to avoid bloat:) Tj
+/F1 11 Tf
+1 0 0 1 58 521 Tm
+(- Custom statuses.) Tj
+/F1 11 Tf
+1 0 0 1 58 506 Tm
+(- Kanban board.) Tj
+/F1 11 Tf
+1 0 0 1 58 491 Tm
+(- Contacts/source tracking.) Tj
+/F1 11 Tf
+1 0 0 1 58 476 Tm
+(- Local attachments.) Tj
+/F1 11 Tf
+1 0 0 1 46 453 Tm
+(This was a product maturity step. A complete app is not the app with every feature; it is) Tj
+/F1 11 Tf
+1 0 0 1 46 438 Tm
+(the app with the right features working cleanly.) Tj
+/F1 15 Tf
+1 0 0 1 46 407 Tm
+(Current State) Tj
+/F1 11 Tf
+1 0 0 1 46 382 Tm
+(Lokerin is now a polished local-first job search tracker.) Tj
+/F1 11 Tf
+1 0 0 1 46 367 Tm
+(Core strengths:) Tj
+/F1 11 Tf
+1 0 0 1 58 352 Tm
+(- Calm compact UI.) Tj
+/F1 11 Tf
+1 0 0 1 58 337 Tm
+(- English and Indonesian.) Tj
+/F1 11 Tf
+1 0 0 1 58 322 Tm
+(- Offline local data.) Tj
+/F1 11 Tf
+1 0 0 1 58 307 Tm
+(- No account required.) Tj
+/F1 11 Tf
+1 0 0 1 58 292 Tm
+(- Follow-up and backup reminders.) Tj
+/F1 11 Tf
+1 0 0 1 58 277 Tm
+(- Calendar handoff.) Tj
+/F1 11 Tf
+1 0 0 1 58 262 Tm
+(- Import/restore backup flow.) Tj
+/F1 11 Tf
+1 0 0 1 58 247 Tm
+(- Multiple export formats.) Tj
+/F1 11 Tf
+1 0 0 1 58 232 Tm
+(- Overview analytics.) Tj
+/F1 11 Tf
+1 0 0 1 58 217 Tm
+(- Templates and duplicate action.) Tj
+/F1 11 Tf
+1 0 0 1 58 202 Tm
+(- Store prep docs and asset guidance.) Tj
+/F1 11 Tf
+1 0 0 1 46 179 Tm
+(Remaining launch items are mostly outside code: final privacy policy, final screenshots,) Tj
+/F1 11 Tf
+1 0 0 1 46 164 Tm
+(final assets, QA pass, production build, Play Store setup.) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 12 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 2517 >>
+stream
+BT
+/F1 11 Tf
+/F1 15 Tf
+1 0 0 1 46 742 Tm
+(Future Roadmap) Tj
+/F1 11 Tf
+1 0 0 1 46 717 Tm
+(Near future, zero operational cost:) Tj
+/F1 11 Tf
+1 0 0 1 58 702 Tm
+(- More PDF theme polish.) Tj
+/F1 11 Tf
+1 0 0 1 58 687 Tm
+(- More templates.) Tj
+/F1 11 Tf
+1 0 0 1 58 672 Tm
+(- More Indonesian copy refinement.) Tj
+/F1 11 Tf
+1 0 0 1 58 657 Tm
+(- More screenshot/store copy polish.) Tj
+/F1 11 Tf
+1 0 0 1 58 642 Tm
+(- Additional QA across Android screen sizes.) Tj
+/F1 11 Tf
+1 0 0 1 58 627 Tm
+(- Better user guide and privacy copy.) Tj
+/F1 11 Tf
+1 0 0 1 46 604 Tm
+(Future with operational cost or bigger complexity:) Tj
+/F1 11 Tf
+1 0 0 1 58 589 Tm
+(- Cloud sync.) Tj
+/F1 11 Tf
+1 0 0 1 58 574 Tm
+(- Login/accounts.) Tj
+/F1 11 Tf
+1 0 0 1 58 559 Tm
+(- AI suggestions.) Tj
+/F1 11 Tf
+1 0 0 1 58 544 Tm
+(- Email parsing.) Tj
+/F1 11 Tf
+1 0 0 1 58 529 Tm
+(- Job board integrations.) Tj
+/F1 11 Tf
+1 0 0 1 58 514 Tm
+(- Remote analytics.) Tj
+/F1 11 Tf
+1 0 0 1 58 499 Tm
+(- Subscription/pro features.) Tj
+/F1 15 Tf
+1 0 0 1 46 468 Tm
+(How To Explain The Workflow To A Friend) Tj
+/F1 11 Tf
+1 0 0 1 46 443 Tm
+(A simple explanation:) Tj
+/F1 11 Tf
+1 0 0 1 58 428 Tm
+(1. I started with a rough Expo app and real errors.) Tj
+/F1 11 Tf
+1 0 0 1 58 413 Tm
+(2. I used AI like a coding partner, not a magic button.) Tj
+/F1 11 Tf
+1 0 0 1 58 398 Tm
+(3. I gave it bugs, screenshots, UI feelings, and product direction.) Tj
+/F1 11 Tf
+1 0 0 1 58 383 Tm
+(4. It inspected the code, changed files, and ran checks.) Tj
+/F1 11 Tf
+1 0 0 1 58 368 Tm
+(5. I tested on my phone and reported what felt wrong.) Tj
+/F1 11 Tf
+1 0 0 1 58 353 Tm
+(6. We repeated until it felt like a real app.) Tj
+/F1 11 Tf
+1 0 0 1 58 338 Tm
+(7. Native features still needed real builds, installs, and QA.) Tj
+/F1 11 Tf
+1 0 0 1 58 323 Tm
+(8. The final product came from taste plus iteration, not one giant prompt.) Tj
+/F1 15 Tf
+1 0 0 1 46 292 Tm
+(Main Lesson) Tj
+/F1 11 Tf
+1 0 0 1 46 267 Tm
+(Vibecoding worked best when the user stayed involved as product owner, tester, and) Tj
+/F1 11 Tf
+1 0 0 1 46 252 Tm
+(taste-maker.) Tj
+/F1 11 Tf
+1 0 0 1 46 237 Tm
+(The assistant was strongest at fast implementation, debugging, consistency checks, and) Tj
+/F1 11 Tf
+1 0 0 1 46 222 Tm
+(explaining tradeoffs.) Tj
+/F1 11 Tf
+1 0 0 1 46 207 Tm
+(The user was strongest at deciding what felt good, what felt unnecessary, and what the app) Tj
+/F1 11 Tf
+1 0 0 1 46 192 Tm
+(should become.) Tj
+/F1 11 Tf
+1 0 0 1 46 169 Tm
+(That combination is the real workflow: human judgment steering AI implementation.) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 12 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R] /Count 5 >>
+endobj
+13 0 obj
+<< /Type /Catalog /Pages 12 0 R >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000003091 00000 n 
+0000003218 00000 n 
+0000006342 00000 n 
+0000006469 00000 n 
+0000009886 00000 n 
+0000010013 00000 n 
+0000012334 00000 n 
+0000012461 00000 n 
+0000015031 00000 n 
+0000015160 00000 n 
+0000015243 00000 n 
+trailer
+<< /Size 14 /Root 13 0 R >>
+startxref
+15294
+%%EOF
